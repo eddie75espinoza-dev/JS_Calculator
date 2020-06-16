@@ -1,0 +1,69 @@
+/* Variables de colores  */
+:root {
+--shadow: #FBFFF9;          /* BLACK #000500 */
+--textDisp: #ffffff;        /* YELLOW #FFE74C */
+--button: #d2d7df;          /* BLUE #3F98ED */
+--container: #212227;       /* RED #FF5964 */
+--body: #FBFFF9;            /* WHITE #FBFFF9 */
+--text: #212227;
+--buttonOper: #637074;
+--bgDis: #dd2d4a;
+}
+body{
+    margin: 0;
+    padding: 16px 16px;
+    background-color:  var(--body);
+    color: var(--text)
+}
+.container {
+    background-color:var(--container);   
+    width: 328px;   /* fit-content*/
+    border-radius: 16px;
+    color: var(--text);
+}
+.display {
+    height: 40px;
+    background-color: var(--bgDis);
+    padding: 8px;
+    font-size: 40px;
+    color: var(--textDisp);
+    border-radius: 8px;
+    text-align: right;
+}
+
+.btn {
+    display: flex;
+    padding: 8px;  
+}
+.number div {
+    text-align: center;    
+}
+button {
+    margin: 2px 8px;
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+}
+.number button {       
+    background-color: var(--button);
+    transition: all 0.7s;
+}
+.zero {
+    height: 60px;
+    width: 140px;
+} 
+.number button:hover{
+    box-shadow: 0 0 12px var(--shadow);
+}
+.oper button {
+    display: block;
+    margin: 4px 8px;
+    background-color: var(--buttonOper);
+    transition: all 0.7s;
+}
+.oper button:hover{
+    box-shadow: 0 0 12px var(--shadow);
+}
